@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "k4hr-timer",
+  "version": "${version}",
+  "name": "K4hr Timer",
+  "description": "SpeedrunIGT addon for the K4HR category",
+  "authors": ["Gregor0410"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/k4hr-timer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.gregor0410.k4hrtimer.K4hrTimer"
+    ],
+    "speedrunigt": [
+      "com.gregor0410.k4hrtimer.K4hrAPI"
+    ]
+  },
+  "mixins": [
+    "k4hr-timer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.0",
+    "minecraft": "",
+    "speedrunigt": ">=10.7"
+  }
+}
